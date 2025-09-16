@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+/* ESTILOS COLORES--------------------------------------------------------------------------------------------- */
+:root {
+  --primary-color: #141414;
+  --secundary-color: #000000;
+  --third-color: #FF8C00;
+  --text-color: #ffffff;
+  --text-color2: #000000;
+}
+
+
+
+/* Header -------------------------------------------------------------------------------------------------------------------------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #000000;
+  font-family: "Raleway", sans-serif;
+}
+
+.logo img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 75px;
+  margin-left: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.4s ease;
+  /* Transición suave al pasar el mouse */
+
+}
+
+/* Efecto hover para todos los enlaces del menú */
+nav ul li a:hover {
+  background: linear-gradient(90deg, #FF8C00, #FFA500);/* Gradiente naranja */
+  background-clip: text;/* Aplica gradiente solo al texto */
+  -webkit-text-fill-color: transparent;/* Hace que el texto sea transparente y muestre el fondo */
+  text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);/* Brillo difuminado alrededor del texto */
+}
+
+
+
+
+/* ESTILOS SECCION INICIO ...............................................................................................................*/
+body {
+  margin: 0;
+  background-color: var(--primary-color);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;/*para que la pagina no haga scroll ya que hay una img fuera*/
+  overflow-y: hidden;
+  z-index: 0;
+}
+
+.logo-fondo {
+  position: absolute;
+  top: 100px;
+  left: -130px;
+  width: 550px;/* Ajusta el tamaño si deseas */
+  z-index: -1;/* Detrás del contenido */
+  transform: rotate(15deg);/* Gira 15 grados hacia la derecha */
+}
+
+.logo-fondo2 {
+  position: absolute;
+  top: 100px;
+  right: -80px;
+  width: 300px;/* Ajusta el tamaño si deseas */
+  z-index: -1;/* Detrás del contenido */
+  transform: rotate(15deg);/* Gira 15 grados hacia la derecha */
+}
+
+.contenedor-central-inicio {
+  position: relative;
+}
+
+.resplandor {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 30px;
+  background: radial-gradient(circle, #FF8C00 10%, transparent 60%);
+}
+
+.perfil {
+  padding: 40px 20px;
+  width: 269px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+P {
+  font-size: 23px;
+  color: white;
+  margin-bottom: 85px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.qr {
+  width: 100px;
+  position: absolute;
+  right: 65px;
+  top: 100%;
+  transform: translateY(-50%);
+}
+
+
+
+/* ESTILOS SECCION PERFIL ...............................................................................................................*/
+.container {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 50px 0px;
+}
+
+.items-arriba h2 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+}
+
+#perfil img {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.items-arriba p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  margin: 0 100px;
+}
+
+/* Caja inferior con borde */
+.info-box {
+  border: 2px solid #ffa500;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-box p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.info-box span {
+  color: #ffa500;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 90px;
+  /* Alinea las etiquetas */
+  text-shadow: 0 0 5px #FF8C00;
+}
+
+.info-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* ESTILOS SECCION HABILIDADES ...............................................................................................................*/
+.habilidades-blandas {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+.habilidades-blandas h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+}
+
+.habilidades-blandas ul {
+  list-style: none;
+  margin-bottom: 113px;
+}
+
+.habilidades-blandas li {
+  font-size: 20px;
+  margin-bottom: 9px;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.habilidades-blandas li::before {
+  content: "•";
+  color: #ffa500;
+  position: absolute;
+  left: 160px;
+}
+
+/* Habilidades técnicas */
+.habilidades-tecnicas {
+  position: relative;
+  background: url("../img/silueta-azul.png") no-repeat right center; 
+  background-size: contain; /* Hace que se ajuste sin deformarse */
+  background-position: right center;/* La mantiene alineada a la derecha */
+  background-repeat: no-repeat;/* Evita que se repita */
+  min-height: 100%;/* Asegura que cubra toda la altura de su contenedor */
+  background-color: var(--secundary-color);/*para que se complete el color total del fondo*/
+}
+
+.habilidades-tecnicas h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  margin-left: -220px;
+  text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+}
+
+.habilidades-tecnicas .iconos {
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 90px);/*define cuántas columnas y el ancho de cada una. 3 columnas, Cada columna mide 90px de ancho.*/
+  gap: 30px;/*Define el espacio entre las filas y las columnas dentro de la grilla. 30pc horz y vert*/
+  margin-bottom: 10px;
+}
+
+.habilidades-tecnicas img {
+  width: 90px;
+  height: auto;
+}
+
+/* Footer .....................*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 50px;
+  flex-wrap: wrap;
+}
+
+.redes a {
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.redes a i {
+  margin-right: 5px;
+}
+
+.whatsapp {
+  background-color: var(--third-color);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.whatsapp i {
+  margin-right: 5px;
+}
+
+
+
+
+/* ESTILOS SECCION PORTAFOLIO ...............................................................................................................*/
+#portafolio {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 20px 60px 0;
+}
+
+.titulo-vertical {
+  writing-mode: vertical-rl;/* Hace el texto vertical */
+  text-orientation: sideways-right;/* Mantiene las letras derechas */
+  font-size: 64px;/* Ajusta el tamaño */
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 5px;/* Espacio entre letras */
+  text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+  display: flex;
+  padding: 3px 5px;
+  border-left: 3px solid var(--third-color);/* Línea al lado derecho */
+  display: inline-block;/* necesario para que pueda girar */
+  transform: rotate(-180deg);/* la rota 90 grados en sentido antihorario */
+}
+
+/* Contenedor principal de las cards */
+.slider-portafolio {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;/* espacio entre tarjetas */
+  padding: 10px 20px;
+}
+
+/* ====== CARD DEL PORTAFOLIO ====== */
+.card-portafolio {
+  background: #222222;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 430px;/* Aumenta altura */
+  margin: 0 10px;/* separación adicional para slick */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card-portafolio:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.card-portafolio .cont-img img {
+  width: 100%;
+  height: 60%;/* Imagen ocupa 60% de la card */
+  object-fit: cover;
+}
+
+/* Contenedor de la info */
+.card-portafolio .cont-info {
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-portafolio h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #fff;
+}
+
+.card-portafolio h3 {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.card-portafolio p {
+  font-size: 11px;
+  margin: 25px 0;
+}
+
+/* Estilo para el enlace */
+.card-portafolio a {
+  display: inline-block;
+  background: var(--third-color);
+  color: #000;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-portafolio a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 35px;
+  color: var(--third-color);
+  opacity: 1.75;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  font-size: 15px;
+  text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+
+}
+
+.slick-dots li button:before {
+  color: white;
+}
