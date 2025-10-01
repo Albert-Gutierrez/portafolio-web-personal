@@ -54,17 +54,16 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
-  transition: all 0.4s ease;
-  /* Transición suave al pasar el mouse */
+  transition: all 0.4s ease;  /* Transición suave al pasar el mouse */
 
 }
 
 /* Efecto hover para todos los enlaces del menú */
 nav ul li a:hover {
-  background: linear-gradient(90deg, #FF8C00, #FFA500);/* Gradiente naranja */
-  background-clip: text;/* Aplica gradiente solo al texto */
-  -webkit-text-fill-color: transparent;/* Hace que el texto sea transparente y muestre el fondo */
-  text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);/* Brillo difuminado alrededor del texto */
+  background: linear-gradient(90deg, #FF8C00, #FFA500);  /* Gradiente naranja */
+  background-clip: text;  /* Aplica gradiente solo al texto */
+  -webkit-text-fill-color: transparent;  /* Hace que el texto sea transparente y muestre el fondo */
+  text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);  /* Brillo difuminado alrededor del texto */
 }
 
 
@@ -78,7 +77,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  overflow-x: hidden;/*para que la pagina no haga scroll ya que hay una img fuera*/
+  overflow-x: hidden;  /*para que la pagina no haga scroll ya que hay una img fuera*/
   overflow-y: hidden;
   z-index: 0;
 }
@@ -87,18 +86,18 @@ body {
   position: absolute;
   top: 100px;
   left: -130px;
-  width: 550px;/* Ajusta el tamaño si deseas */
-  z-index: -1;/* Detrás del contenido */
-  transform: rotate(15deg);/* Gira 15 grados hacia la derecha */
+  width: 550px;  /* Ajusta el tamaño si deseas */
+  z-index: -1;  /* Detrás del contenido */
+  transform: rotate(15deg);  /* Gira 15 grados hacia la derecha */
 }
 
 .logo-fondo2 {
   position: absolute;
   top: 100px;
   right: -80px;
-  width: 300px;/* Ajusta el tamaño si deseas */
-  z-index: -1;/* Detrás del contenido */
-  transform: rotate(15deg);/* Gira 15 grados hacia la derecha */
+  width: 300px;  /* Ajusta el tamaño si deseas */
+  z-index: -1;  /* Detrás del contenido */
+  transform: rotate(15deg);  /* Gira 15 grados hacia la derecha */
 }
 
 .contenedor-central-inicio {
@@ -141,6 +140,7 @@ P {
   top: 100%;
   transform: translateY(-50%);
 }
+
 
 
 
@@ -204,6 +204,8 @@ P {
 }
 
 
+
+
 /* ESTILOS SECCION HABILIDADES ...............................................................................................................*/
 .habilidades-blandas {
   background: var(--primary-color);
@@ -237,15 +239,15 @@ P {
   left: 160px;
 }
 
-/* Habilidades técnicas */
+
 .habilidades-tecnicas {
   position: relative;
-  background: url("../img/silueta-azul.png") no-repeat right center; 
-  background-size: contain; /* Hace que se ajuste sin deformarse */
-  background-position: right center;/* La mantiene alineada a la derecha */
-  background-repeat: no-repeat;/* Evita que se repita */
-  min-height: 100%;/* Asegura que cubra toda la altura de su contenedor */
-  background-color: var(--secundary-color);/*para que se complete el color total del fondo*/
+  background: url("../img/silueta-azul.png") no-repeat right center;
+  background-size: contain;  /* Hace que se ajuste sin deformarse */
+  background-position: right center;  /* La mantiene alineada a la derecha */
+  background-repeat: no-repeat;  /* Evita que se repita */
+  min-height: 100%;  /* Asegura que cubra toda la altura de su contenedor */
+  background-color: var(--secundary-color);  /*para que se complete el color total del fondo*/
 }
 
 .habilidades-tecnicas h2 {
@@ -261,7 +263,7 @@ P {
 .habilidades-tecnicas .iconos {
   margin-left: 150px;
   display: grid;
-  grid-template-columns: repeat(3, 90px);/*define cuántas columnas y el ancho de cada una. 3 columnas, Cada columna mide 90px de ancho.*/
+  grid-template-columns: repeat(3, 90px); /*define cuántas columnas y el ancho de cada una. 3 columnas, Cada columna mide 90px de ancho.*/
   gap: 30px;/*Define el espacio entre las filas y las columnas dentro de la grilla. 30pc horz y vert*/
   margin-bottom: 10px;
 }
@@ -319,25 +321,25 @@ footer {
 }
 
 .titulo-vertical {
-  writing-mode: vertical-rl;/* Hace el texto vertical */
+  writing-mode: vertical-rl; /* Hace el texto vertical */
   text-orientation: sideways-right;/* Mantiene las letras derechas */
-  font-size: 64px;/* Ajusta el tamaño */
+  font-size: 64px;  /* Ajusta el tamaño */
   font-weight: 700;
   color: var(--text-color);
-  letter-spacing: 5px;/* Espacio entre letras */
+  letter-spacing: 5px;  /* Espacio entre letras */
   text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
   display: flex;
   padding: 3px 5px;
-  border-left: 3px solid var(--third-color);/* Línea al lado derecho */
-  display: inline-block;/* necesario para que pueda girar */
-  transform: rotate(-180deg);/* la rota 90 grados en sentido antihorario */
+  border-left: 3px solid var(--third-color);  /* Línea al lado derecho */
+  display: inline-block;  /* necesario para que pueda girar */
+  transform: rotate(-180deg);  /* la rota 90 grados en sentido antihorario */
 }
 
 /* Contenedor principal de las cards */
 .slider-portafolio {
   display: flex;
   align-items: stretch;
-  gap: 20px;/* espacio entre tarjetas */
+  gap: 20px;  /* espacio entre tarjetas */
   padding: 10px 20px;
 }
 
@@ -349,8 +351,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 430px;/* Aumenta altura */
-  margin: 0 10px;/* separación adicional para slick */
+  height: 430px;  /* Aumenta altura */
+  margin: 0 10px;  /* separación adicional para slick */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -363,7 +365,8 @@ footer {
 
 .card-portafolio .cont-img img {
   width: 100%;
-  height: 60%;/* Imagen ocupa 60% de la card */
+  height: 60%;
+  /* Imagen ocupa 60% de la card */
   object-fit: cover;
 }
 
@@ -410,20 +413,120 @@ footer {
   color: #000;
 }
 
+/* da estilos a los botones que estan debajo de las card, aplica para todos los carruseles */
 .slick-prev:before,
 .slick-next:before {
   font-size: 35px;
   color: var(--third-color);
   opacity: 1.75;
 }
-
+/* da estilos cuando se activa el boton abajo de las card */
 .slick-dots li.slick-active button:before {
   color: white;
   font-size: 15px;
   text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
-
 }
 
 .slick-dots li button:before {
   color: white;
 }
+
+
+
+
+
+
+/* ESTILOS SECCION ESTUDIOS ...............................................................................................................*/
+#estudios {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 20px 60px 0;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 44px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+}
+
+.slider-academico {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;/* espacio entre tarjetas */
+  padding: 10px 20px;
+}
+
+.card-academico {
+  background: #222222;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 390px;
+  /* Aumenta altura */
+  margin: 0 10px;
+  /* separación adicional para slick */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card-academico:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.card-academico .cont-img img {
+  width: 100%;
+  height: 60%;
+  /* Imagen ocupa 60% de la card */
+  object-fit: cover;
+}
+
+/* Contenedor de la info */
+.card-academico .cont-info {
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-academico h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #fff;
+}
+
+.card-academico p {
+  font-size: 11px;
+  margin: 25px 0;
+}
+
+.card-academico a {
+  display: inline-block;
+  background: var(--third-color);
+  color: #000;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-academico a:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+
+
+
+
+
+
