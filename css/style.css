@@ -54,23 +54,32 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
-  transition: all 0.4s ease;  /* Transición suave al pasar el mouse */
+  transition: all 0.4s ease;
+  /* Transición suave al pasar el mouse */
 
 }
 
 /* Efecto hover para todos los enlaces del menú */
 nav ul li a:hover {
-  background: linear-gradient(90deg, #FF8C00, #FFA500);  /* Gradiente naranja */
-  background-clip: text;  /* Aplica gradiente solo al texto */
-  -webkit-text-fill-color: transparent;  /* Hace que el texto sea transparente y muestre el fondo */
-  text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);  /* Brillo difuminado alrededor del texto */
+  background: linear-gradient(90deg, #FF8C00, #FFA500);
+  /* Gradiente naranja */
+  background-clip: text;
+  /* Aplica gradiente solo al texto */
+  -webkit-text-fill-color: transparent;
+  /* Hace que el texto sea transparente y muestre el fondo */
+  text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+  /* Brillo difuminado alrededor del texto */
 }
 
-nav ul li a.active{
-  background: linear-gradient(90deg, #FF8C00, #FFA500);  /* Gradiente naranja */
-  background-clip: text;  /* Aplica gradiente solo al texto */
-  -webkit-text-fill-color: transparent;  /* Hace que el texto sea transparente y muestre el fondo */
-  text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);  /* Brillo difuminado alrededor del texto */
+nav ul li a.active {
+  background: linear-gradient(90deg, #FF8C00, #FFA500);
+  /* Gradiente naranja */
+  background-clip: text;
+  /* Aplica gradiente solo al texto */
+  -webkit-text-fill-color: transparent;
+  /* Hace que el texto sea transparente y muestre el fondo */
+  text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+  /* Brillo difuminado alrededor del texto */
 }
 
 
@@ -84,8 +93,9 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden;  /*para que la pagina no haga scroll ya que hay una img fuera*/
- 
+  overflow-x: hidden;
+  /*para que la pagina no haga scroll ya que hay una img fuera*/
+
   z-index: 0;
 }
 
@@ -93,18 +103,24 @@ body {
   position: absolute;
   top: 100px;
   left: -130px;
-  width: 450px;  /* Ajusta el tamaño si deseas */
-  z-index: -1;  /* Detrás del contenido */
-  transform: rotate(15deg);  /* Gira 15 grados hacia la derecha */
+  width: 450px;
+  /* Ajusta el tamaño si deseas */
+  z-index: -1;
+  /* Detrás del contenido */
+  transform: rotate(15deg);
+  /* Gira 15 grados hacia la derecha */
 }
 
 .logo-fondo2 {
   position: absolute;
   top: 100px;
   right: -80px;
-  width: 300px;  /* Ajusta el tamaño si deseas */
-  z-index: -1;  /* Detrás del contenido */
-  transform: rotate(15deg);  /* Gira 15 grados hacia la derecha */
+  width: 300px;
+  /* Ajusta el tamaño si deseas */
+  z-index: -1;
+  /* Detrás del contenido */
+  transform: rotate(15deg);
+  /* Gira 15 grados hacia la derecha */
 }
 
 .contenedor-central-inicio {
@@ -133,7 +149,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-P {
+.contenedor-central-inicio P {
   font-size: 23px;
   color: white;
   margin-bottom: 85px;
@@ -250,11 +266,16 @@ P {
 .habilidades-tecnicas {
   position: relative;
   background: url("../img/silueta-azul.png") no-repeat right center;
-  background-size: contain;  /* Hace que se ajuste sin deformarse */
-  background-position: right center;  /* La mantiene alineada a la derecha */
-  background-repeat: no-repeat;  /* Evita que se repita */
-  min-height: 100%;  /* Asegura que cubra toda la altura de su contenedor */
-  background-color: var(--secundary-color);  /*para que se complete el color total del fondo*/
+  background-size: contain;
+  /* Hace que se ajuste sin deformarse */
+  background-position: right center;
+  /* La mantiene alineada a la derecha */
+  background-repeat: no-repeat;
+  /* Evita que se repita */
+  min-height: 100%;
+  /* Asegura que cubra toda la altura de su contenedor */
+  background-color: var(--secundary-color);
+  /*para que se complete el color total del fondo*/
 }
 
 .habilidades-tecnicas h2 {
@@ -270,8 +291,10 @@ P {
 .habilidades-tecnicas .iconos {
   margin-left: 150px;
   display: grid;
-  grid-template-columns: repeat(3, 90px); /*define cuántas columnas y el ancho de cada una. 3 columnas, Cada columna mide 90px de ancho.*/
-  gap: 30px;/*Define el espacio entre las filas y las columnas dentro de la grilla. 30pc horz y vert*/
+  grid-template-columns: repeat(3, 90px);
+  /*define cuántas columnas y el ancho de cada una. 3 columnas, Cada columna mide 90px de ancho.*/
+  gap: 30px;
+  /*Define el espacio entre las filas y las columnas dentro de la grilla. 30pc horz y vert*/
   margin-bottom: 10px;
 }
 
@@ -332,25 +355,33 @@ footer {
 }
 
 .titulo-vertical {
-  writing-mode: vertical-rl; /* Hace el texto vertical */
-  text-orientation: sideways-right;/* Mantiene las letras derechas */
-  font-size: 64px;  /* Ajusta el tamaño */
+  writing-mode: vertical-rl;
+  /* Hace el texto vertical */
+  text-orientation: sideways-right;
+  /* Mantiene las letras derechas */
+  font-size: 64px;
+  /* Ajusta el tamaño */
   font-weight: 700;
   color: var(--text-color);
-  letter-spacing: 5px;  /* Espacio entre letras */
+  letter-spacing: 5px;
+  /* Espacio entre letras */
   text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
   display: flex;
   padding: 3px 5px;
-  border-left: 3px solid var(--third-color);  /* Línea al lado derecho */
-  display: inline-block;  /* necesario para que pueda girar */
-  transform: rotate(-180deg);  /* la rota 90 grados en sentido antihorario */
+  border-left: 3px solid var(--third-color);
+  /* Línea al lado derecho */
+  display: inline-block;
+  /* necesario para que pueda girar */
+  transform: rotate(-180deg);
+  /* la rota 90 grados en sentido antihorario */
 }
 
 /* Contenedor principal de las cards */
 .slider-portafolio {
   display: flex;
   align-items: stretch;
-  gap: 20px;  /* espacio entre tarjetas */
+  gap: 20px;
+  /* espacio entre tarjetas */
   padding: 10px 20px;
 }
 
@@ -362,8 +393,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 430px;  /* Aumenta altura */
-  margin: 0 10px;  /* separación adicional para slick */
+  height: 430px;
+  /* Aumenta altura */
+  margin: 0 10px;
+  /* separación adicional para slick */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -431,6 +464,7 @@ footer {
   color: var(--third-color);
   opacity: 1.75;
 }
+
 /* da estilos cuando se activa el boton abajo de las card */
 .slick-dots li.slick-active button:before {
   color: white;
@@ -447,7 +481,7 @@ footer {
 
 
 
-/* ESTILOS SECCION ESTUDIOS ...............................................................................................................*/
+/* ESTILOS SECCION ESTUDIOS ....................................................................................................................*/
 #estudios {
   background: var(--primary-color);
   color: #fff;
@@ -466,7 +500,8 @@ footer {
 .slider-academico {
   display: flex;
   align-items: stretch;
-  gap: 20px;/* espacio entre tarjetas */
+  gap: 20px;
+  /* espacio entre tarjetas */
   padding: 10px 20px;
 }
 
@@ -537,7 +572,209 @@ footer {
 
 
 
+/* ESTILOS SECCION EXPERIENCIA...............................................................................................................*/
+#experiencia {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 20px 10px;
+}
+
+/* Título de sección (glow) */
+#experiencia .container .row .col-exp-der h2 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px #ff8c00, 0 0 20px #ff8c00, 0 0 30px #ff8c00;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Tarjetas de experiencia */
+#experiencia .card-experiencia {
+  border: 2px solid #ff8c00;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#experiencia .card-experiencia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+}
+
+/* Imagen dentro de la tarjeta */
+#experiencia .card-experiencia .cont-img img {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Información dentro de la tarjeta */
+#experiencia .cont-informacion {
+  flex: 1;
+}
+
+#experiencia .cont-informacion h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#experiencia .cont-informacion p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+.col-exp-izqImagen img {
+  margin-top: 30px;
+  max-width: 150px;
+}
+
+/* LÍNEAS Y CÍRCULOS ::::::::::::::::::::::*/
+/* Línea general */
+#experiencia .card-experiencia::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 120px;
+  /* largo de la línea */
+  height: 3px;
+  background: #ff8c00;
+}
+
+/* Círculo general */
+#experiencia .card-experiencia::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  /* centrado vertical */
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ff8c00;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+/* Para la tarjeta izquierda */
+.col-exp-izqImg .card-experiencia::before {
+  right: -120px;
+}
+
+.col-exp-izqImg .card-experiencia::after {
+  right: -140px;
+}
+
+/* Para la tarjeta derecha */
+.col-exp-izqImg:last-child .card-experiencia::before {
+  left: -120px;
+}
+
+.col-exp-izqImg:last-child .card-experiencia::after {
+  left: -140px;
+}
 
 
 
+/* ESTILOS SECCION HOBBIES-............................................................................................................... */
+/* ====== SECCIÓN HOBBIES ====== */
+#hobbies {
+  background: var(--primary-color);
+}
 
+/* ====== Tarjetas generales ====== */
+.card-tecnologia,
+.card-viajes {
+  color: white;
+  border-radius: 15px;
+  padding: 50px 20px 20px 20px;/* espacio superior para el icono */
+  margin-top: 40px;
+  position: relative;/* permite ubicar íconos encima */
+  min-height: 200px;
+  transition: transform 0.3s ease;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+}
+
+.card-musica,
+.card-seriesPeliculas,
+.card-aprendizajeContinuo {
+  background: #fff;
+  color: black;
+  border-radius: 15px;
+  padding: 50px 20px 20px 20px;/* espacio superior para el icono */
+  margin-top: 40px;
+  position: relative;/* permite ubicar íconos encima */
+  min-height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.card-tecnologia:hover,
+.card-musica:hover,
+.card-viajes:hover,
+.card-seriesPeliculas:hover,
+.card-aprendizajeContinuo:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== Imágenes de íconos en la esquina superior izquierda ====== */
+.cont-img-tecnologia,
+.cont-img-musica,
+.cont-img-viajes,
+.cont-img-series,
+.cont-img-aprendizaje {
+  position: absolute;
+  top: -40px;/* que sobresalga */
+  left: -20px;
+}
+
+.cont-img-tecnologia img,
+.cont-img-musica img,
+.cont-img-viajes img,
+.cont-img-series img,
+.cont-img-aprendizaje img {
+  width: 80px;
+  height: auto;
+}
+
+/* ====== Títulos de las tarjetas ====== */
+.card-tecnologia h2,
+.card-musica h2,
+.card-viajes h2,
+.card-seriesPeliculas h2,
+.card-aprendizajeContinuo h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* ====== Texto "MIS HOBBIES" con resplandor ====== */
+.titulo-hobbies {
+  padding-top: 80px;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: left;
+  color: #ffffff;
+  text-shadow:
+    0 0 10px #ff9f1c,
+    0 0 20px #ff9f1c,
+    0 0 30px #ff9f1c;
+}
+
+/* ====== Imagen triqui ====== */
+.cont-img-triki {
+  margin-top: 40px;
+  align-items: center;
+  padding: 40px;
+}
+
+.cont-img-triki img {
+  max-width: 100px;
+  height: 100px;
+}
