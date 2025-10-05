@@ -4,51 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio website - Albert gutierrez</title>
-    <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- Tema opcional -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <!-- libreria Bootstrap CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- LIBRERIA AOS ANIMATE -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <title>Portafolio Website - Albert Gutierrez</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- mi CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="img/ALBERT-logo.png" alt="Logo albert gutierrez">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="2perfil.html"  class="active">PERFIL</a></li>
-                <li><a href="3habilidades.html">HABILIDADES</a></li>
-                <li><a href="4portafolio.html">PORTAFOLIO</a></li>
-                <li><a href="5estudios.html">ESTUDIOS</a></li>
-                <li><a href="6experiencia.html">EXPERIENCIA</a></li>
-                <li><a href="7hobbies.html">HOBBIES</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img src="img/ALBERT-logo.png" alt="Logo Albert Gutierrez" class="navbar-logo">
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="2perfil.html" class="active">PERFIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="3habilidades.html">HABILIDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="4portafolio.html">PORTAFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="5estudios.html">ESTUDIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="6experiencia.html">EXPERIENCIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="7hobbies.html">HOBBIES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
 
     <main>
         <section id="perfil">
             <div class="container">
-
                 <!-- Fila superior -->
-                <div class="row items-arriba">
-                    <div class="col-md-5 col-izq">
+                <div class="row items-arriba align-items-center">
+                    <div class="col-12 col-md-5 col-izq text-center text-md-start">
                         <h2>¿QUIÉN SOY?</h2>
-                        <img src="img/logotipo-identificacion.png" alt="Identificación">
+                        <img src="img/logotipo-identificacion.png" alt="Identificación" class="img-fluid mt-3">
                     </div>
-                    <div class="col-md-7 col-der">
+                    <div class="col-12 col-md-7 col-der mt-4 mt-md-0">
                         <p>
                             Soy un profesional en proceso de transición hacia el sector tecnológico, con una sólida
                             formación como Tecnólogo en Análisis y Desarrollo de Software en el SENA.
@@ -66,56 +86,49 @@
                 </div>
 
                 <!-- Fila inferior -->
-                <div class="row items-abajo">
-                    <div class="col-12 info-box">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p><span>Nombre:</span> Albert Gutierrez</p>
-                                <p><span>Teléfono:</span> 3212281546</p>
-                                <p><span>Email:</span> <a href="mailto:alberix252@gmail.com">alberix252@gmail.com</a>
-                                </p>
-                            </div>
-                            <div class="col-md-6">
-                                <p><span>Cumpleaños:</span> 17 abril</p>
-                                <p><span>Ubicacion:</span>Villeta (Cundinamarca)</p>
-                                <p><span>Freelance:</span> Sí</p>
+                <div class="row items-abajo mt-5">
+                    <div class="col-12">
+                        <div class="info-box">
+                            <div class="row">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <p><span>Nombre:</span> Albert Gutierrez</p>
+                                    <p><span>Teléfono:</span> 3212281546</p>
+                                    <p><span>Email:</span> <a href="mailto:alberix252@gmail.com">alberix252@gmail.com</a></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><span>Cumpleaños:</span> 17 abril</p>
+                                    <p><span>Ubicación:</span> Villeta (Cundinamarca)</p>
+                                    <p><span>Freelance:</span> Sí</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
 
-
     <footer>
         <div class="redes">
-            <a href="https://www.linkedin.com/in/alberth-gutierrez-gonzalez/" target="_blank"><i class="fab fa-linkedin"></i>
-                LinkedIn</a>
-            <a href="https://github.com/Albert-Gutierrez" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/alberth-gutierrez-gonzalez/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Albert-Gutierrez" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
         </div>
-        <a href="https://wa.link/aqh5zm" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Contactame</a>
+        <a href="https://wa.link/aqh5zm" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> Contáctame
+        </a>
     </footer>
 
-
-
-
-    <!-- jQuery (necesario para slick) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Slick JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- JavaScript libreria -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWydDkMlfc4sWpSPSULbI"
         crossorigin="anonymous"></script>
-
-    <!-- mi JS -->
+    
+    <!-- Tu JS -->
     <script src="js/main.js"></script>
-
-    <!--JS de AOS ANIMATE -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </body>
 
 </html>

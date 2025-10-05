@@ -4,38 +4,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portafolio website - Albert gutierrez</title>
+  <title>Portafolio Website - Albert Gutierrez</title>
   <!-- Slick CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Tema opcional -->
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <!-- libreria Bootstrap CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- LIBRERIA AOS ANIMATE -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+  <!-- libreria Bootstrap CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!-- LIBRERIA font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <img src="img/ALBERT-logo.png" alt="Logo albert gutierrez">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="2perfil.html">PERFIL</a></li>
-        <li><a href="3habilidades.html">HABILIDADES</a></li>
-        <li><a href="4portafolio.html">PORTAFOLIO</a></li>
-        <li><a href="5estudios.html">ESTUDIOS</a></li>
-        <li><a href="6experiencia.html">EXPERIENCIA</a></li>
-        <li><a href="7hobbies.html" class="active">HOBBIES</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="img/ALBERT-logo.png" alt="Logo Albert Gutierrez" class="navbar-logo">
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="2perfil.html">PERFIL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="3habilidades.html">HABILIDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="4portafolio.html">PORTAFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="5estudios.html">ESTUDIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="6experiencia.html">EXPERIENCIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="7hobbies.html" class="active">HOBBIES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -48,32 +72,32 @@
         <!-- ---------fila superior----------- -->
         <div class="row">
           <!-- ---------primer tarjeta (TECNOLOGIA)----------- -->
-          <div class="col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="card-tecnologia">
               <div class="cont-img-tecnologia">
                 <img src="img/codigo(1).png" alt="imagen codigo 1">
               </div>
-              <h2><strong>TECNOLOGIA</strong></h2>
+              <h2>TECNOLOGIA</h2>
               <p>Me gusta explorar nuevas herramientas y lenguajes de programación en mi tiempo libre.</p>
             </div>
           </div>
           <!-- ---------segunda tarjeta (MUSICA)----------- -->
-          <div class="col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="card-musica">
               <div class="cont-img-musica">
                 <img src="img/nota-musical.png" alt="imagen nota musical">
               </div>
-              <h2><strong>MUSICA</strong></h2>
+              <h2>MUSICA</h2>
               <p>Apasionado del rock clásico y especialmente bandas como Queen, Bon Jovi, Kraken y Kronos.</p>
             </div>
           </div>
           <!-- ---------tercer tarjeta (VIAJES)----------- -->
-          <div class="col-md-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="card-viajes">
               <div class="cont-img-viajes">
                 <img src="img/bolsa-de-lona.png" alt="img maleta">
               </div>
-              <h2><strong>VIAJES</strong></h2>
+              <h2>VIAJES</h2>
               <p>Disfruto recorrer pueblos pequeños, conocer su cultura y naturaleza.</p>
             </div>
 
@@ -84,31 +108,31 @@
         <!-- ---------fila inferior----------- -->
         <div class="row">
           <!-- ---------primer tarjeta (TITULO MIS HOBBIES)----------- -->
-          <div class="col-md-3">
+          <div class="col-12 col-md-3">
             <h2 class="titulo-hobbies">MIS HOBBIES</h2>
           </div>
           <!-- ---------2 tarjeta  (SERIES Y PELICULAS)----------- -->
-          <div class="col-md-3">
+          <div class="col-12 col-md-3" data-aos="fade-up" data-aos-delay="400">
             <div class="card-seriesPeliculas">
               <div class="cont-img-series">
                 <img src="img/viendo-una-pelicula.png" alt="img viendo pelicula">
               </div>
-              <h2><strong>SERIES Y PELICULAS</strong></h2>
+              <h2>SERIES Y PELICULAS</h2>
               <p> Fan de las historias que combinan estrategia, ciencia ficción y suspenso.</p>
             </div>
           </div>
           <!-- ---------3 tarjeta (APRENDIZAJE CONTINUO)----------- -->
-          <div class="col-md-3">
+          <div class="col-12 col-md-3" data-aos="fade-up" data-aos-delay="500">
             <div class="card-aprendizajeContinuo">
               <div class="cont-img-aprendizaje">
                 <img src="img/aprendizaje-continuo.png" alt="img aprendizaje continuo">
               </div>
-              <h2><strong>APRENDIZAJE CONTINUO</strong></h2>
+              <h2>APRENDIZAJE CONTINUO</h2>
               <p>Estudiar nuevas tecnologías, hacer cursos y seguir creciendo profesionalmente.</p>
             </div>
           </div>
           <!-- ---------4 tarjeta (IMAGEN TRIQUI)----------- -->
-          <div class="col-md-3">
+          <div class="col-12 col-md-3" data-aos="fade-up" data-aos-delay="600">
             <div class="cont-img-triki">
               <img src="img/hobbies-triky.png" alt="img triky">
             </div>
@@ -119,18 +143,15 @@
 
     </section>
 
-
-
-
   </main>
 
   <footer>
     <div class="redes">
-      <a href="https://www.linkedin.com/in/alberth-gutierrez-gonzalez/" target="_blank"><i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/alberth-gutierrez-gonzalez/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>
         LinkedIn</a>
-      <a href="https://github.com/Albert-Gutierrez" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://github.com/Albert-Gutierrez" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
     </div>
-    <a href="https://wa.link/aqh5zm" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Contactame</a>
+    <a href="https://wa.link/aqh5zm" class="whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Contactame</a>
   </footer>
 
 
@@ -139,10 +160,9 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Slick JS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <!-- JavaScript libreria -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWydDkMlfc4sWpSPSULbI"
     crossorigin="anonymous"></script>
 
   <!-- mi JS -->
@@ -150,6 +170,15 @@
 
   <!--JS de AOS ANIMATE -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    // Inicializar AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 
 </html>

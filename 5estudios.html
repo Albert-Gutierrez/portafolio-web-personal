@@ -4,157 +4,168 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>portafolio website - Albert gutierrez</title>
+   <title>Portafolio Website - Albert Gutierrez</title>
+   
    <!-- Slick CSS -->
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
    <!-- Tema opcional -->
    <link rel="stylesheet" type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-   <!-- libreria Bootstrap CSS only -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+   
    <!-- LIBRERIA AOS ANIMATE -->
    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+   
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
    <header>
-      <div class="logo">
-         <img src="img/ALBERT-logo.png" alt="Logo albert gutierrez">
-      </div>
-      <nav>
-         <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="2perfil.html">PERFIL</a></li>
-            <li><a href="3habilidades.html">HABILIDADES</a></li>
-            <li><a href="4portafolio.html">PORTAFOLIO</a></li>
-            <li><a href="5estudios.html" class="active">ESTUDIOS</a></li>
-            <li><a href="6experiencia.html">EXPERIENCIA</a></li>
-            <li><a href="7hobbies.html">HOBBIES</a></li>
-         </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container-fluid">
+            <div class="logo">
+               <img src="img/ALBERT-logo.png" alt="Logo Albert Gutierrez" class="navbar-logo">
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="2perfil.html">PERFIL</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="3habilidades.html">HABILIDADES</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="4portafolio.html">PORTAFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="5estudios.html" class="active">ESTUDIOS</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="6experiencia.html">EXPERIENCIA</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="7hobbies.html">HOBBIES</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
       </nav>
    </header>
 
    <main>
       <section id="estudios">
-
          <div class="container-fluid">
-
             <div class="row">
-
                <div class="col-md-12 col-carrousel">
-
-                  <h2 class="titulo">FORMACION ACADEMICA</h2>
+                  <h2 class="titulo">FORMACIÓN ACADÉMICA</h2>
 
                   <div class="slider-academico">
 
                      <!-- Card 1 -->
-                     <div class="card-academico">
+                     <div class="card-academico" data-aos="fade-up" data-aos-duration="800">
                         <div class="cont-img">
-                           <img src="img/foto-sena-grupo.png" alt="foto grupal sena">
+                           <img src="img/foto-sena-grupo.png" alt="Grupo de estudiantes SENA">
                         </div>
                         <div class="cont-info">
-                           <h2>Analisis y desarrollo de software SENA</h2>
-                           <p>AREAS DE ENFOQUE: <br>
-                              * Desarrollo de aplicaciones web con HTML5, CSS, JS, BOOTSTRAP. <br>
-                              * Uso del framework Front-end BOOTSTRAP. <br>
-                              * Aplicacion de metodologias agiles y modelado UML
-                           </p>
-                           <a href="#" target="_blank">Ver documento</a>
+                           <h2>ANÁLISIS Y DESARROLLO DE SOFTWARE - SENA</h2>
+                           <p>Desarrollo de aplicaciones web con HTML5, CSS, JS, BOOTSTRAP. Uso del framework Front-end BOOTSTRAP. Aplicación de metodologías ágiles y modelado UML.</p>
+                           <a href="docs/certificado-sena-ads.pdf" target="_blank" rel="noopener noreferrer">Ver Documento</a>
                         </div>
                      </div>
 
                      <!-- Card 2 -->
-                     <div class="card-academico">
+                     <div class="card-academico" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                         <div class="cont-img">
-                           <img src="img/2.png" alt="foto">
+                           <img src="img/excel-2007.png" alt="Certificado Excel 2007 - SENA">
                         </div>
                         <div class="cont-info">
-                           <h2>ESTUDIOS TECNICOS</h2>
-                           <p>Proyecto realizado como practica de html5, css el cual tiene seccion planes, destino
-                              y contacto
-                           </p>
-                           <a href="#" target="_blank">Ver documento</a>
+                           <h2>ACCIÓN DE FORMACIÓN - SENA</h2>
+                           <p>Manejo de herramientas Microsoft Excel 2007</p>
+                           <a href="docs/certificado-excel-2007.pdf" target="_blank" rel="noopener noreferrer">Ver Documento</a>
                         </div>
                      </div>
 
                      <!-- Card 3 -->
-                     <div class="card-academico">
+                     <div class="card-academico" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <div class="cont-img">
-                           <img src="img/3.png" alt="foto">
+                           <img src="img/tic.png" alt="Certificado NTIC - SENA">
                         </div>
                         <div class="cont-info">
-                           <h2>ESTUDIOS PREFESIONALES</h2>
-                           <p>Proyecto realizado como practica de html5, css el cual tiene seccion planes, destino
-                              y contacto
-                           </p>
-                           <a href="#" target="_blank">Ver documento</a>
+                           <h2>ACCIÓN DE FORMACIÓN - SENA</h2>
+                           <p>NTIC - Nuevas Tecnologías de la Información y la Comunicación aplicadas a la formación</p>
+                           <a href="docs/certificado-ntic.pdf" target="_blank" rel="noopener noreferrer">Ver Documento</a>
                         </div>
                      </div>
 
                      <!-- Card 4 -->
-                     <div class="card-academico">
+                     <div class="card-academico" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                         <div class="cont-img">
-                           <img src="img/1.png" alt="foto">
+                           <img src="img/mantenimiuento de pc.png" alt="Certificado Mantenimiento de PC - SENA">
                         </div>
                         <div class="cont-info">
-                           <h2>ESTUDIOS PROF</h2>
-                           <p>Proyecto realizado como practica de html5, css el cual tiene seccion planes, destino
-                              y contacto
-                           </p>
-                           <a href="#" target="_blank">Ver documento</a>
+                           <h2>ACCIÓN DE FORMACIÓN - SENA</h2>
+                           <p>Fundamentación de ensamble y mantenimiento de computadores para los procesos de soporte técnico</p>
+                           <a href="docs/certificado-mantenimiento-pc.pdf" target="_blank" rel="noopener noreferrer">Ver Documento</a>
                         </div>
                      </div>
 
                   </div>
-
-
-                  <!-- Repite las otras cards aquí -->
-
                </div>
-
             </div>
-
          </div>
-
       </section>
-
-
-
-
-
-
    </main>
 
    <footer>
       <div class="redes">
-         <a href="https://www.linkedin.com/in/alberth-gutierrez-gonzalez/" target="_blank"><i
-               class="fab fa-linkedin"></i>
-            LinkedIn</a>
-         <a href="https://github.com/Albert-Gutierrez" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+         <a href="https://www.linkedin.com/in/alberth-gutierrez-gonzalez/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> LinkedIn
+         </a>
+         <a href="https://github.com/Albert-Gutierrez" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+         </a>
       </div>
-      <a href="https://wa.link/aqh5zm" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Contactame</a>
+      <a href="https://wa.link/aqh5zm" class="whatsapp" target="_blank" rel="noopener noreferrer">
+         <i class="fab fa-whatsapp"></i> Contáctame
+      </a>
    </footer>
-
-
 
    <!-- jQuery (necesario para slick) -->
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <!-- Slick JS -->
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-   <!-- JavaScript libreria -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWydDkMlfc4sWpSPSULbI"
       crossorigin="anonymous"></script>
-
-   <!-- mi JS -->
+   <!-- JS de AOS ANIMATE -->
+   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+   
+   <!-- Tu JS -->
    <script src="js/main.js"></script>
 
-   <!--JS de AOS ANIMATE -->
-   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+   <script>
+      // Inicializar AOS
+      AOS.init({
+         duration: 800,
+         once: true
+      });
+   </script>
 </body>
 
 </html>

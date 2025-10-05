@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     $('.slider-portafolio').slick({
         slidesToShow: 3,       // Número de cards visibles a la vez
         slidesToScroll: 1,     // Cuántas se mueven por clic
@@ -47,16 +47,11 @@ $(document).ready(function () {
             }
         ]
     });
-});
 
-
-
-
-// Inicializa AOS cuando el DOM esté listo
-document.addEventListener("DOMContentLoaded", function () {
-    AOS.init({
-        duration: 1000, // duración de animaciones en ms
-        once: true,     // animar solo la primera vez
-        offset: 120,    // distancia desde el viewport para activar
+    // Cerrar navbar al hacer clic en enlaces
+    $('.nav-link').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
     });
+
 });
+
