@@ -925,8 +925,8 @@ footer {
   }
 
   .habilidades-tecnicas h2{
-    font-size: 20px;
-    margin-left: -110px;
+    font-size: 18px;
+    margin-left: -80px;
   }
 
   .habilidades-blandas li {
@@ -937,7 +937,7 @@ footer {
   .habilidades-tecnicas .iconos {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-     margin-left: 60px;
+    margin-left: 60px;
   }
   
   .habilidades-tecnicas img {
