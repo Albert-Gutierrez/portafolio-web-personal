@@ -588,7 +588,6 @@ h1 {
 }
 
 /* ESTILOS SECCION HOBBIES-............................................................................................................... */
-/* ====== SECCIÓN HOBBIES ====== */
 #hobbies {
   background: var(--primary-color);
   padding: 40px 20px;
@@ -765,8 +764,8 @@ footer {
 
 
 
-/* MEDIA QUERIES - RESPONSIVE DESIGN -----------------------------------------------------------------------------------------------------*/
 
+/* MEDIA QUERIES - RESPONSIVE -----------------------------------------------------------------------------------------------------*/
 
 /* Tablets y pantallas medianas (768px - 1024px)------------------------------------------------- */
 @media (max-width: 1024px) {
@@ -921,19 +920,24 @@ footer {
     padding: 30px 15px;
   }
   
-  .habilidades-blandas h2,
-  .habilidades-tecnicas h2 {
+  .habilidades-blandas h2{
     font-size: 20px;
   }
-  
+
+  .habilidades-tecnicas h2{
+    font-size: 20px;
+    margin-left: -110px;
+  }
+
   .habilidades-blandas li {
     font-size: 16px;
     padding-left: 1.5rem;
   }
   
   .habilidades-tecnicas .iconos {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+     margin-left: 60px;
   }
   
   .habilidades-tecnicas img {
