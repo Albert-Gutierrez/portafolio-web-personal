@@ -173,6 +173,7 @@ h1 {
   display: block;
   margin: 0 auto 20px;
   width: 100%;
+  border-radius: 20px;
 }
 
 .items-arriba p {
@@ -338,7 +339,7 @@ h1 {
   padding: 10px 0;
 }
 
-/* ====== CARD DEL PORTAFOLIO ====== */
+/* CARD DEL PORTAFOLIO  */
 .card-portafolio {
   background: #222222;
   border-radius: 15px;
@@ -1121,17 +1122,5 @@ footer {
   .redes a,
   .whatsapp {
     font-size: 14px;
-  }
-}
-
-/* Pantallas grandes (más de 1200px) */
-@media (min-width: 1200px) {
-  .container-fluid {
-    padding: 0 50px;
-  }
-  
-  .navbar-nav .nav-link {
-    font-size: 18px;
-    padding: 10px 20px !important;
   }
 }
