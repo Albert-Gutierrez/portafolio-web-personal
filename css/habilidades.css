@@ -310,7 +310,14 @@ footer {
 
 
     /* Habilidades */
-    .habilidades-blandas,
+    .habilidades-blandas {
+        padding: 30px 15px;
+    }
+
+    .habilidades-blandas ul {
+        margin-left: 48px;
+    }
+
     .habilidades-tecnicas {
         padding: 30px 15px;
     }

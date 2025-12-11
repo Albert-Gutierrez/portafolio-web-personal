@@ -93,18 +93,18 @@ body {
 
 .logo-fondo {
     position: absolute;
-    top: 100px;
-    left: -130px;
-    width: 450px;
+    top: 6px;
+    left: 56px;
+    width: 400px;
     z-index: -1;
     transform: rotate(15deg);
 }
 
 .logo-fondo2 {
     position: absolute;
-    top: 100px;
-    right: -80px;
-    width: 300px;
+    top: 29px;
+    right: 56px;
+    width: 408px;
     z-index: -1;
     transform: rotate(15deg);
 }

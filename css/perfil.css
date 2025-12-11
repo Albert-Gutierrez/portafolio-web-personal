@@ -283,6 +283,20 @@ footer {
         margin: 0 0 15px 0;
     }
 
+    .col-der {
+        padding: 0px 40px;
+    }
+
+
+
+    .items-der {
+        padding-left: 60px;
+    }
+
+    .items-izq {
+        padding-left: 60px;
+    }
+
     .info-box {
         padding: 1rem;
     }

@@ -295,6 +295,11 @@ footer {
         margin: 5px 0;
     }
 
+    .slick-dots {
+        bottom: -35px;
+
+    }
+
     /* Footer */
     footer {
         padding: 15px 20px;
