@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ESTILOS COLORES--------------------------------------------------------------------------------------------- */
+:root {
+    --primary-color: #141414;
+    --secundary-color: #000000;
+    --third-color: #FF8C00;
+    --text-color: #ffffff;
+    --text-color2: #000000;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header -------------------------------------------------------------------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    background-color: #000000;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #000000 !important;
+}
+
+.container-fluid {
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    padding: 8px 15px !important;
+    margin: 0 5px;
+}
+
+/* Efecto hover para todos los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    background: linear-gradient(90deg, #FF8C00, #FFA500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.navbar-nav .nav-link.active {
+    background: linear-gradient(90deg, #FF8C00, #FFA500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.navbar-toggler {
+    border: 1px solid #FF8C00;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 140, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+#hobbies {
+    background: var(--primary-color);
+    padding: 65px 20px;
+}
+
+/* ====== Tarjetas generales ====== */
+.card-tecnologia,
+.card-viajes {
+    color: white;
+    border-radius: 15px;
+    padding: 50px 20px 20px 20px;
+    margin-top: 40px;
+    position: relative;
+    min-height: 200px;
+    transition: transform 0.3s ease;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+}
+
+.card-musica,
+.card-seriesPeliculas,
+.card-aprendizajeContinuo {
+    background: #fff;
+    color: black;
+    border-radius: 15px;
+    padding: 50px 20px 20px 20px;
+    margin-top: 40px;
+    position: relative;
+    min-height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card-tecnologia:hover,
+.card-musica:hover,
+.card-viajes:hover,
+.card-seriesPeliculas:hover,
+.card-aprendizajeContinuo:hover {
+    transform: translateY(-5px);
+}
+
+/*---Imágenes de íconos en la esquina superior izquierda---*/
+.cont-img-tecnologia,
+.cont-img-musica,
+.cont-img-viajes,
+.cont-img-series,
+.cont-img-aprendizaje {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+}
+
+.cont-img-tecnologia img,
+.cont-img-musica img,
+.cont-img-viajes img,
+.cont-img-series img,
+.cont-img-aprendizaje img {
+    width: 80px;
+    height: auto;
+}
+
+/*Títulos de las tarjetas*/
+.card-tecnologia h2,
+.card-musica h2,
+.card-viajes h2,
+.card-seriesPeliculas h2,
+.card-aprendizajeContinuo h2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/*Texto "MIS HOBBIES */
+.titulo-hobbies {
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff9f1c, 0 0 20px #ff9f1c, 0 0 30px #ff9f1c;
+}
+
+/*Imagen triqui */
+.cont-img-triki {
+    margin-top: 40px;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.cont-img-triki img {
+    max-width: 100px;
+    height: 100px;
+    width: 100%;
+}
+
+/* Animación tipo latido */
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+/* Aplica a todos los iconos de las tarjetas */
+.cont-img-tecnologia img,
+.cont-img-musica img,
+.cont-img-viajes img,
+.cont-img-series img,
+.cont-img-aprendizaje img {
+    animation: heartbeat 2s infinite;
+    display: inline-block;
+    transform-origin: center;
+}
+
+/* Diferentes velocidades para dar dinamismo */
+.cont-img-tecnologia img {
+    animation-duration: 2s;
+}
+
+.cont-img-musica img {
+    animation-duration: 2.5s;
+}
+
+.cont-img-viajes img {
+    animation-duration: 3s;
+}
+
+.cont-img-series img {
+    animation-duration: 2.5s;
+}
+
+.cont-img-aprendizaje img {
+    animation-duration: 3s;
+}
+
+
+/* Footer .....................*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: auto;
+}
+
+.redes a {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #FF8C00;
+}
+
+.redes a i {
+    margin-right: 5px;
+}
+
+.whatsapp {
+    background-color: var(--third-color);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* MEDIA QUERIES - RESPONSIVE -----------------------------------------------------------------------------------------------------*/
+
+/* Tablets y pantallas medianas (768px - 1024px)------------------------------------------------- */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .logo img {
+        height: 50px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 6px 12px !important;
+    }
+
+    /* Hobbies */
+    .titulo-hobbies {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+
+/* Móviles y pantallas pequeñas (hasta 767px) --------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+
+    /* Header */
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 10px 15px !important;
+        margin: 5px 0;
+    }
+
+    /* Hobbies */
+    #hobbies {
+        padding: 30px 15px;
+    }
+
+    .titulo-hobbies {
+        font-size: 28px;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-tecnologia,
+    .card-musica,
+    .card-viajes,
+    .card-seriesPeliculas,
+    .card-aprendizajeContinuo {
+        margin-top: 60px;
+        padding: 40px 15px 15px 15px;
+        min-height: 180px;
+    }
+
+    .cont-img-tecnologia,
+    .cont-img-musica,
+    .cont-img-viajes,
+    .cont-img-series,
+    .cont-img-aprendizaje {
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cont-img-tecnologia img,
+    .cont-img-musica img,
+    .cont-img-viajes img,
+    .cont-img-series img,
+    .cont-img-aprendizaje img {
+        width: 60px;
+    }
+
+    .cont-img-triki {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .cont-img-triki img {
+        max-width: 80px;
+        height: 80px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .redes a {
+        margin-right: 0;
+        font-size: 16px;
+    }
+}
+
+/* Pantallas muy pequeñas (hasta 480px) -----------------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+
+    /* Header */
+    .logo img {
+        height: 40px;
+    }
+
+    /* Footer */
+    .redes a,
+    .whatsapp {
+        font-size: 14px;
+    }
+}

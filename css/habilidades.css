@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ESTILOS COLORES--------------------------------------------------------------------------------------------- */
+:root {
+    --primary-color: #141414;
+    --secundary-color: #000000;
+    --third-color: #FF8C00;
+    --text-color: #ffffff;
+    --text-color2: #000000;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header -------------------------------------------------------------------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    background-color: #000000;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #000000 !important;
+}
+
+.container-fluid {
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    padding: 8px 15px !important;
+    margin: 0 5px;
+}
+
+/* Efecto hover para todos los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    background: linear-gradient(90deg, #FF8C00, #FFA500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.navbar-nav .nav-link.active {
+    background: linear-gradient(90deg, #FF8C00, #FFA500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.navbar-toggler {
+    border: 1px solid #FF8C00;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 140, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#habilidades {
+    background: var(--primary-color);
+}
+
+.habilidades-blandas {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 140px 20px;
+}
+
+.habilidades-blandas h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+    text-align: center;
+    background: var(--primary-color);
+}
+
+.habilidades-blandas ul {
+    list-style: none;
+    padding: 0;
+    background: var(--primary-color);
+    margin-left: 183px;
+}
+
+.habilidades-blandas li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 1rem;
+    text-align: left;
+    background: var(--primary-color);
+}
+
+.habilidades-blandas li::before {
+    content: "•";
+    color: #ffa500;
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+}
+
+.habilidades-tecnicas {
+    position: relative;
+    background: url("../img/silueta-azul.png") no-repeat right center;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-color: var(--secundary-color);
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidades-tecnicas h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+    text-align: center;
+    margin-left: -250px;
+}
+
+.habilidades-tecnicas .iconos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-left: 130px;
+}
+
+.habilidades-tecnicas img {
+    width: 80px;
+    height: auto;
+    animation: spin 3s linear infinite;
+    transform-style: preserve-3d;
+    display: inline-block;
+}
+
+/* Animación de giro 3D */
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.iconos img:nth-child(1) {
+    animation-duration: 4s;
+}
+
+.iconos img:nth-child(2) {
+    animation-duration: 4s;
+}
+
+.iconos img:nth-child(3) {
+    animation-duration: 4s;
+}
+
+.iconos img:nth-child(4) {
+    animation-duration: 5s;
+}
+
+.iconos img:nth-child(5) {
+    animation-duration: 5s;
+}
+
+.iconos img:nth-child(6) {
+    animation-duration: 5s;
+}
+
+.iconos img:nth-child(7) {
+    animation-duration: 6s;
+}
+
+.iconos img:nth-child(8) {
+    animation-duration: 6s;
+}
+
+.iconos img:nth-child(9) {
+    animation-duration: 6s;
+}
+
+
+
+/* Footer .....................*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: auto;
+}
+
+.redes a {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #FF8C00;
+}
+
+.redes a i {
+    margin-right: 5px;
+}
+
+.whatsapp {
+    background-color: var(--third-color);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+    background-color: #fff !important;
+    color: #000;
+}
+
+
+/* MEDIA QUERIES - RESPONSIVE -----------------------------------------------------------------------------------------------------*/
+
+/* Tablets y pantallas medianas (768px - 1024px)------------------------------------------------- */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .logo img {
+        height: 50px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 6px 12px !important;
+    }
+
+
+    /* Habilidades */
+    .habilidades-tecnicas .iconos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .habilidades-tecnicas img {
+        width: 70px;
+    }
+
+}
+
+/* Móviles y pantallas pequeñas (hasta 767px) --------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+
+    /* Header */
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 10px 15px !important;
+        margin: 5px 0;
+    }
+
+
+    /* Habilidades */
+    .habilidades-blandas,
+    .habilidades-tecnicas {
+        padding: 30px 15px;
+    }
+
+    .habilidades-blandas h2 {
+        font-size: 20px;
+    }
+
+    .habilidades-tecnicas h2 {
+        font-size: 18px;
+        margin-left: -80px;
+    }
+
+    .habilidades-blandas li {
+        font-size: 16px;
+        padding-left: 1.5rem;
+    }
+
+    .habilidades-tecnicas .iconos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-left: 60px;
+    }
+
+    .habilidades-tecnicas img {
+        width: 60px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .redes a {
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+}
+
+/* Pantallas muy pequeñas (hasta 480px) -----------------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+
+    /* Header */
+    .logo img {
+        height: 40px;
+    }
+
+    /* Habilidades */
+    .habilidades-tecnicas .iconos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .habilidades-tecnicas img {
+        width: 50px;
+    }
+
+
+    /* Footer */
+    .redes a,
+    .whatsapp {
+        font-size: 14px;
+    }
+}

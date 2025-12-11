@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ESTILOS COLORES--------------------------------------------------------------------------------------------- */
+:root {
+    --primary-color: #141414;
+    --secundary-color: #000000;
+    --third-color: #FF8C00;
+    --text-color: #ffffff;
+    --text-color2: #000000;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header -------------------------------------------------------------------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    background: #000000;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #000000 !important;
+}
+
+.container-fluid {
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    padding: 8px 15px !important;
+    margin: 0 5px;
+}
+
+/* Efecto hover para todos los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    background: linear-gradient(90deg, #FF8C00, #FFA500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.navbar-nav .nav-link.active {
+    background: linear-gradient(90deg, #FF8C00, #FFA500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.navbar-toggler {
+    border: 1px solid #FF8C00;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 140, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ------------------------------------------ */
+#perfil {
+    background: var(--primary-color);
+}
+
+.container {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 30px 15px;
+}
+
+.col-izq {
+    background: var(--primary-color);
+}
+
+.items-arriba h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #FF8C00, 0 0 10px #FF8C00, 0 0 10px #FF8C00;
+    text-align: center;
+    background: var(--primary-color);
+}
+
+#perfil img {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--primary-color);
+}
+
+.col-der {
+    background: var(--primary-color);
+}
+
+.items-arriba p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 35px;
+    margin-right: 150px;
+    text-align: justify;
+    background: var(--primary-color);
+}
+
+/* Caja inferior con borde */
+.items-abajo {
+    background: var(--primary-color);
+
+}
+
+.info-box {
+    border: 2px solid #ffa500;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background: var(--primary-color);
+}
+
+.info-box p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    background: var(--primary-color);
+
+}
+
+.info-box span {
+    color: #ffa500;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 90px;
+    text-shadow: 0 0 5px #FF8C00;
+    background: var(--primary-color);
+
+}
+
+.items-der {
+    background: var(--primary-color);
+    padding-left: 280px;
+}
+
+.items-izq {
+    background: var(--primary-color);
+    padding-left: 80px;
+}
+
+.info-box a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer .....................*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: auto;
+}
+
+.redes a {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #FF8C00;
+}
+
+.redes a i {
+    margin-right: 5px;
+}
+
+.whatsapp {
+    background-color: var(--third-color);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* MEDIA QUERIES - RESPONSIVE -----------------------------------------------------------------------------------------------------*/
+
+/* Tablets y pantallas medianas (768px - 1024px)------------------------------------------------- */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .logo img {
+        height: 50px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+
+    /* Perfil */
+    .items-arriba h2 {
+        font-size: 32px;
+    }
+}
+
+/* Móviles y pantallas pequeñas (hasta 767px) --------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+
+    /* Header */
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+
+
+    /* Perfil */
+    .container {
+        padding: 20px 15px;
+    }
+
+    .items-arriba h2 {
+        font-size: 28px;
+    }
+
+    .items-arriba p {
+        font-size: 14px;
+        margin: 0 0 15px 0;
+    }
+
+    .info-box {
+        padding: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .redes a {
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+}
+
+/* Pantallas muy pequeñas (hasta 480px) -----------------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+
+    /* Header */
+    .logo img {
+        height: 40px;
+    }
+
+    /* Inicio */
+    .perfil {
+        width: 150px;
+        height: 170px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .contenedor-central-inicio p {
+        font-size: 14px;
+    }
+
+    /* Habilidades */
+    .habilidades-tecnicas .iconos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .habilidades-tecnicas img {
+        width: 50px;
+    }
+
+    /* Cards generales */
+    .card-portafolio,
+    .card-academico {
+        margin: 0 5px;
+    }
+
+    /* Footer */
+    .redes a,
+    .whatsapp {
+        font-size: 14px;
+    }
+}

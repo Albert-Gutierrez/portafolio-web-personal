@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ESTILOS COLORES--------------------------------------------------------------------------------------------- */
+:root {
+    --primary-color: #141414;
+    --secundary-color: #000000;
+    --third-color: #FF8C00;
+    --text-color: #ffffff;
+    --text-color2: #000000;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header -------------------------------------------------------------------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    background-color: #000000;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #000000 !important;
+}
+
+.container-fluid {
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    padding: 8px 15px !important;
+    margin: 0 5px;
+}
+
+/* Efecto hover para todos los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    background: linear-gradient(90deg, #FF8C00, #FFA500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.navbar-nav .nav-link.active {
+    background: linear-gradient(90deg, #FF8C00, #FFA500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.navbar-toggler {
+    border: 1px solid #FF8C00;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 140, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#experiencia {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+/* Título de sección (glow) */
+#experiencia .container .row .col-exp-der h2 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px #ff8c00, 0 0 20px #ff8c00, 0 0 30px #ff8c00;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Tarjetas de experiencia */
+#experiencia .card-experiencia {
+    border: 2px solid #ff8c00;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+#experiencia .card-experiencia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+}
+
+/* Imagen dentro de la tarjeta */
+#experiencia .card-experiencia .cont-img img {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Información dentro de la tarjeta */
+#experiencia .cont-informacion {
+    flex: 1;
+}
+
+#experiencia .cont-informacion h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#experiencia .cont-informacion p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+.col-exp-izqImagen img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Footer .....................*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: auto;
+}
+
+.redes a {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #FF8C00;
+}
+
+.redes a i {
+    margin-right: 5px;
+}
+
+.whatsapp {
+    background-color: var(--third-color);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* MEDIA QUERIES - RESPONSIVE -----------------------------------------------------------------------------------------------------*/
+
+/* Tablets y pantallas medianas (768px - 1024px)------------------------------------------------- */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .logo img {
+        height: 50px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 6px 12px !important;
+    }
+
+
+    /* Experiencia */
+    #experiencia .container .row .col-exp-der h2 {
+        font-size: 28px;
+    }
+
+}
+
+/* Móviles y pantallas pequeñas (hasta 767px) --------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+
+    /* Header */
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 10px 15px !important;
+        margin: 5px 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .redes a {
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+
+    /* Experiencia */
+    #experiencia {
+        padding: 30px 15px;
+    }
+
+    #experiencia .container .row .col-exp-der h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    #experiencia .card-experiencia {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #experiencia .card-experiencia .cont-img img {
+        max-width: 80px;
+    }
+
+    .col-exp-izqImagen {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Pantallas muy pequeñas (hasta 480px) -----------------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+
+    /* Header */
+    .logo img {
+        height: 40px;
+    }
+
+    /* Inicio */
+    .perfil {
+        width: 150px;
+        height: 170px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .contenedor-central-inicio p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .redes a,
+    .whatsapp {
+        font-size: 14px;
+    }
+}
